@@ -16,7 +16,7 @@ function createWindow() {
     title: 'vibrations',
     width: 500,
     height: 500,
-    // titleBarStyle: 'hidden-inset',
+    titleBarStyle: 'hidden-inset',
   });
   // load index.html
   win.loadURL(`file://${__dirname}/index.html`);
