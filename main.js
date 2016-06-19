@@ -9,7 +9,12 @@ let win;
 
 function createWindow() {
   // create new window
-  win = new BrowserWindow({width: 500, height: 500});
+  win = new BrowserWindow({
+    title: 'vibrations',
+    width: 500,
+    height: 500,
+    titleBarStyle: 'hidden-inset',
+  });
   // load index.html
   win.loadURL(`file://${__dirname}/index.html`);
 
