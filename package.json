@@ -1,0 +1,29 @@
+{
+  "name": "vibrations",
+  "version": "1.0.0",
+  "description": "A lil soundcloud app on desktop",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samnnodim/vibrations.git"
+  },
+  "keywords": [
+    "soundcloud",
+    "desktop",
+    "music",
+    "electron",
+    "mac",
+    "vibrations",
+    "vibes",
+    "vybescartel"
+  ],
+  "author": "Sam y Braxton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samnnodim/vibrations/issues"
+  },
+  "homepage": "https://github.com/samnnodim/vibrations#readme"
+}
