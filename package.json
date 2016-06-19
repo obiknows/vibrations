@@ -27,7 +27,9 @@
     "url": "https://github.com/samnnodim/vibrations/issues"
   },
   "homepage": "https://github.com/samnnodim/vibrations#readme",
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.14.0"
+  },
   "devDependencies": {
     "electron-prebuilt": "^1.2.3"
   }
