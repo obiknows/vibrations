@@ -6,8 +6,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
 		<link rel="stylesheet" type="text/css" href="assets/css/simple-grid/simplegrid.css"/>
 		<!-- JS -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-		<script type=text/javascript src="assets/js/style.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script><script type=text/javascript src="assets/js/style.js"></script>
   </head>
 
   <body>
@@ -17,8 +16,10 @@
 
 			<div class="col-3-12 profile push-right">
   			<div class="profile-stuff push-right">
-  				<img class="profile-pic" src="assets/css/images/temp.jpg"/>
-  				<h2 class="user-name"><a href="#" class="dummy-link">Braxton Gunter</a></h2>
+	  			<a href="#" class=" anchor-block dummy-link">
+	  				<img class="profile-pic" src="assets/css/images/temp.jpg"/>
+	  				<h2 class="user-name">Braxton Gunter</h2>
+	  			</a>
 				</div>
 			</div>
 
@@ -36,33 +37,66 @@
 				</div>	
 
 				<ul class="main-list">
-					<li class="title">MAIN</li>
+					<li class="title">
+						MAIN
 						<ul class="sub-list">
 							<li class="name-w-icon">
-								<img src="assets/css/images/icons/music.png"/>
-								Stream
+								<a href="#" class="anchor-block">
+									<img src="assets/css/images/icons/music.png"/>
+									Stream
+								</a>
 							</li>
 							<li class="name-w-icon">
-								<img src="assets/css/images/icons/follower.png"/>
-								Following
+								<a href="#" class="anchor-block">
+									<img src="assets/css/images/icons/follower.png"/>
+									Following
+								</a>
 							</li>
 							<li class="name-w-icon">
-								<img src="assets/css/images/icons/heart.png"/>
-								Likes
-							</li>cle
+								<a href="#" class="anchor-block">
+									<img src="assets/css/images/icons/heart.png"/>
+									Likes
+								</a>
+							</li>
 						</ul>
-					<li class="title">PLAYLISTS</li>
+					</li>
+
+					<li class="title">
+						PLAYLISTS
 						<ul class="sub-list">
-							
+							<li class="name-w-icon">
+								<a href="#" class="anchor-block">
+									Trending now
+								</a>
+							</li>
+							<li class="name-w-icon">
+								<a href="#" class="anchor-block">
+									Top 50
+								</a>
+							</li>
+							<li class="name-w-icon">
+								<a href="#" class="anchor-block">
+									Friends' likes
+								</a>
+							</li>
+							<li class="name-w-icon add-item">
+								<a href="#" class="anchor-block add">
+									+ Add one
+								</a>
+							</li>
 						</ul>
+					</li>
+
 				</ul>
 
 			</div> <!-- end sidebar -->
   	
   	</div> <!-- end wrapper -->
-=
+
   </body>
+
   <script type="text/javascript">
     const expressAppUrl = "http://localhost:3000"
   </script>
+
 </html>

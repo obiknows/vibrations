@@ -24,6 +24,8 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	min-height: 100vh;
 	color: #bdbdbd;
+	background-color: #fafafa;
+}
 }
 
 .clear,.clear-fix {
@@ -42,10 +44,17 @@ a {
 	cursor: pointer;
 }
 
+a.anchor-block {
+	display: block;
+}
+
+a:hover {
+	color: #ff6600;
+}
+
 .app-wrapper {
-	/*height: calc(100vh - 50px);*/
+	height: calc(100vh - 50px);
 	width: 100%;
-	background-color: #ffffff;
 }
 
 
@@ -111,8 +120,9 @@ a {
 	margin-top: 10px;
 	border-radius: 40px;
 	border: 1px solid #eeeeee;
+	background-color: #ffffff;
 	position: relative;
-	padding: 5px 5px 5px 40px;
+	padding: 5px 5px 10px 40px;
 }
 
 .search-bar input {
@@ -134,9 +144,17 @@ a {
 	padding-left: 20px;
 }
 
+.nav-sidebar .main-list li.title:first-child  .sub-list{
+	margin-left: 25px;
+}
+
 .nav-sidebar .sub-list {
 	padding-top: 10px;
 	padding-bottom: 20px;
+}
+
+.nav-sidebar .sub-list:last-child {
+	padding-left: 15px;
 }
 
 
@@ -147,6 +165,7 @@ a {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	position: relative;
+	letter-spacing: 0;
 }
 
 .nav-sidebar .sub-list .name-w-icon img {
@@ -162,6 +181,10 @@ a {
 	list-style: none;
 	letter-spacing: 1.33px;
 	font-size: 13px;
+}
+
+li.add-item {
+	margin-top: 25px;
 }
 
 
