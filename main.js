@@ -5,14 +5,14 @@ const {app} = electron;
 const {BrowserWindow} = electron;
 
 // Express Web Server
-const express = require('express');
+const server = require('./app/app.js');
 
 // global reference of the window obj (for grbge coll. reasons)
 let win;
 
 /* APP LIFECYCLE STUFFS */
 // [BEFORE READY] - app is about to launch
-// app.on('will-finish-launching', createServer);
+app.on('will-finish-launching', createServer);
 
 // [READY] - when the app is ready..call this
 app.on('ready', createWindow);
@@ -57,7 +57,5 @@ function createWindow() {
 }
 
 function createServer() {
-  // create express server instance
-  let server = express();
-
+  // create app server instance
 }
