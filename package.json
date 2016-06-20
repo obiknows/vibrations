@@ -1,10 +1,11 @@
 {
   "name": "vibrations",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A lil soundcloud app on desktop",
   "main": "main.js",
   "scripts": {
     "start": "./node_modules/.bin/electron .",
+    "desktop": "node ./start.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,7 +28,11 @@
     "url": "https://github.com/samnnodim/vibrations/issues"
   },
   "homepage": "https://github.com/samnnodim/vibrations#readme",
-  "dependencies": {},
+  "dependencies": {
+    "childprocess": "^2.0.1",
+    "express": "^4.14.0",
+    "passport-soundcloud": "^0.2.0"
+  },
   "devDependencies": {
     "electron-prebuilt": "^1.2.3"
   }

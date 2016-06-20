@@ -4,6 +4,9 @@ const {app} = electron;
 // module to create native window
 const {BrowserWindow} = electron;
 
+// Express Middleware
+const express = require('express')();
+
 // global reference of the window obj (for grbge coll. reasons)
 let win;
 
