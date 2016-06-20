@@ -1,4 +1,5 @@
 
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400';
 
 
 /* testing css */
@@ -16,14 +17,163 @@
 
 
 
-
 /* general formatting */
 
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	min-height: 100vh;
+	color: #bdbdbd;
+}
+
+.clear,.clear-fix {
+	content: "";
+	clear: both;
+  width: 100%;
+  height: 0;
+}
+
+a {
+	transition: 0.3s;
+	color: inherit;
+	font-size:  inherit;
+	font-weight: inherit;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.app-wrapper {
+	/*height: calc(100vh - 50px);*/
+	width: 100%;
+	background-color: #ffffff;
+}
 
 
 
+
+/* title bar */
 
 .title-bar {
+	/*display: inline-flex;*/
+	webkit-app-region: drag;
 	width: 100%;
 	height: 50px;
+	/*border-bottom: 1px solid #eeeeee;*/
+	background: url("images/soundcloud.png") no-repeat center;
+	background-size: 50px;
+	background-color: #484a4e;
+}
+
+.title-bar .profile {
+	height: 100%;
+}
+
+.title-bar .profile-stuff {
+	min-width: 150px;
+	height: 100%;
+	position: relative;
+}
+.title-bar .profile-pic {
+	position: absolute;
+	border-radius: 100%;
+	width: 30px;
+	height: 30px;
+	top: 10px;
+	left: -18px;
+}
+
+.user-name {
+	color: #bdbdbd;
+	font-size: 13px;
+	font-weight: 400;
+	padding-right: 20px;
+	background: url("images/icons/menu_down.png") no-repeat right;
+	background-size: 8px 5px;
+	margin: 15px;
+	text-align: right;
+}
+
+
+
+/* nav-sidebar */
+
+.nav-sidebar {
+	margin: 0;
+	width: 250px;
+	height: 100%;
+	position: fixed;
+	border-right: 1px solid #eeeeee;
+}
+
+.nav-sidebar .search-bar {
+	width: 70%;
+	margin: auto;
+	margin-top: 10px;
+	border-radius: 40px;
+	border: 1px solid #eeeeee;
+	position: relative;
+	padding: 5px 5px 5px 40px;
+}
+
+.search-bar input {
+	border: none;
+	outline: 0;
+	font-size: 12px;
+	font-weight: 300;
+}
+
+.search-bar .search-icon {
+	position: absolute;
+	left: 10px;
+	top: 7.5px;
+	width: 20px;
+	height: 20px;
+}
+
+.nav-sidebar .main-list {
+	padding-left: 20px;
+}
+
+.nav-sidebar .sub-list {
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+
+.nav-sidebar .sub-list .name-w-icon {
+	list-style: none;
+	font-size: 13px;
+	font-weight: 300;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	position: relative;
+}
+
+.nav-sidebar .sub-list .name-w-icon img {
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: 8px;
+	left: -25px;
+}
+
+.main-list .title {
+	color: #9e9e9e;
+	list-style: none;
+	letter-spacing: 1.33px;
+	font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+@media handheld, only screen and (max-width: 767px) {
+	body [class*='col-'] {
+		margin: 0;
+	}
 }
