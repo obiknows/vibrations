@@ -4,17 +4,46 @@ const {app} = electron;
 // module to create native window
 const {BrowserWindow} = electron;
 
-// Express Middleware
-const express = require('express')();
+// Express Web Server
+const server = require('./app/app.js');
 
 // global reference of the window obj (for grbge coll. reasons)
 let win;
+
+/* APP LIFECYCLE STUFFS */
+// [BEFORE READY] - app is about to launch
+app.on('will-finish-launching', createServer);
+
+// [READY] - when the app is ready..call this
+app.on('ready', createWindow);
+
+// [WHEN ALL WINDOWS CLOSED]
+app.on('window-all-closed', windowsAllClosed);
+
+// [ON REOPEN]
+app.on('activate', onActivate);
+
+/* HELPER FUNCTIONS */
+
+function windowsAllClosed () {
+  // if you're on mac, keep open unless user quits w/ Cmd + Q
+  if (process.platform !== 'darwin') {
+    app.quit()
+  }
+}
+
+function onActivate () {
+  // when the app is activated from the click on the dock
+  if (win === null) {
+    createWindow();
+  }
+}
 
 function createWindow() {
   // create new window
   win = new BrowserWindow({
     title: 'vibrations',
-    width: 500,
+    width: 800,
     height: 500,
     titleBarStyle: 'hidden-inset',
   });
@@ -27,20 +56,6 @@ function createWindow() {
   });
 }
 
-// READY - when the app is ready..call this
-app.on('ready', createWindow);
-
-// WHEN ALL WINDOWS CLOSED
-app.on('window-all-closed', () => {
-  // if you're on mac, keep open unless user quits w/ Cmd + Q
-  if (process.platform !== 'darwin') {
-    app.quit()
-  }
-});
-
-// ON REOPEN
-app.on('activate', () => {
-  if (win === null) {
-    createWindow();
-  }
-});
+function createServer() {
+  // create app server instance
+}

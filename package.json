@@ -29,8 +29,11 @@
   },
   "homepage": "https://github.com/samnnodim/vibrations#readme",
   "dependencies": {
+    "body-parser": "^1.15.1",
     "childprocess": "^2.0.1",
+    "cookie-session": "^1.2.0",
     "express": "^4.14.0",
+    "express-session": "^1.13.0",
     "passport-soundcloud": "^0.2.0"
   },
   "devDependencies": {
