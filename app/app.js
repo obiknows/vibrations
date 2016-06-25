@@ -15,7 +15,7 @@ app.set('views', path.join(__dirname, 'views'));
 // });
 
 // Listen to all internal requests and things on [8080]
-const port = 3301
+const port = process.env.APP_PORT;
 app.listen(port);
 console.log('server is listening on '+ port);
 

@@ -1,10 +1,11 @@
+require('dotenv').config();
 const electron = require('electron');
 // module that controls app lifecycle
 const {app} = electron;
 // module to create native window
 const {BrowserWindow} = electron;
 
-// Express Web Server
+// Express Web Server & env variables
 const server = require('./app/app.js');
 
 // global reference of the window obj (for grbge coll. reasons)
@@ -48,7 +49,7 @@ function createWindow() {
     titleBarStyle: 'hidden-inset',
   });
   // load index.html
-  win.loadURL(`file://${__dirname}/index.html`);
+  win.loadURL(`file://${__dirname}/app/index.html`);
 
   // handle window close
   win.on('closed', () => {
@@ -57,5 +58,5 @@ function createWindow() {
 }
 
 function createServer() {
-  // create app server instance
+  console.log('Server created.');
 }
