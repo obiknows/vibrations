@@ -11,7 +11,10 @@ const {BrowserWindow} = electron;
 // global reference of the window obj (for grbge coll. reasons)
 let win;
 
-/* APP LIFECYCLE STUFFS */
+/*
+ * APP LIFECYCLE STUFFS
+*/
+
 // [BEFORE READY] - app is about to launch
 app.on('will-finish-launching', createServer);
 
@@ -58,5 +61,8 @@ function createWindow() {
 }
 
 function createServer() {
+  // TODO: create empty window transparent window
+  // TODO: create express app instance in window
+  // TODO: test and make sure is working
   console.log('Server created.');
 }
