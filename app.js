@@ -6,7 +6,7 @@ const {app} = electron;
 const {BrowserWindow} = electron;
 
 // Express Web Server & env variables
-const server = require('./app/app.js');
+// TODO
 
 // global reference of the window obj (for grbge coll. reasons)
 let win;
