@@ -3,28 +3,100 @@
   <head>
     <meta charset="utf-8">
     <title>vibrations</title>
-    <link rel="stylesheet" type="text/css" href="/assets/css/style.css"/>
-		<link rel="stylesheet" type="text/css" href="/assets/css/simple-grid/simple-grid.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="assets/css/simple-grid/simplegrid.css"/>
 		<!-- JS -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-		<script type=text/javascript src="/assets/js/style.js"></script>
-    <style media="screen">
-      body {
-        height: 100vh;
-        width: 100vw;
-      }
-    </style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script><script type=text/javascript src="assets/js/style.js"></script>
   </head>
-  <body style="-webkit-app-region: drag">
 
-  	<div class="title-bar border01">
-  		<row>
-        <!-- Theres a lot of shit going on. -->
-  		</row>
-  	</div>
+  <body>
+
+  	<!-- title -->
+  	<div class="title-bar" style="-webkit-app-region: drag">
+
+			<div class="col-3-12 profile push-right">
+  			<div class="profile-stuff push-right">
+	  			<a href="#" class=" anchor-block dummy-link">
+	  				<img class="profile-pic" src="assets/css/images/temp.jpg"/>
+	  				<h2 class="user-name">Braxton Gunter</h2>
+	  			</a>
+				</div>
+			</div>
+
+			<div class="clear-fix">&nbsp;</div>
+  	</div> <!-- end title bar -->
+
+  	<div class="app-wrapper">
+
+	  	<!-- sidebar -->
+			<div class="nav-sidebar">
+
+				<div class="search-bar">
+					<input placeholder="Search anything" />
+					<img class="search-icon" src="assets/css/images/icons/search.png" />
+				</div>
+
+				<ul class="main-list">
+					<li class="title">
+						MAIN
+						<ul class="sub-list">
+							<li class="name-w-icon">
+								<a href="#" class="anchor-block">
+									<img src="assets/css/images/icons/music.png"/>
+									Stream
+								</a>
+							</li>
+							<li class="name-w-icon">
+								<a href="#" class="anchor-block">
+									<img src="assets/css/images/icons/follower.png"/>
+									Following
+								</a>
+							</li>
+							<li class="name-w-icon">
+								<a href="#" class="anchor-block">
+									<img src="assets/css/images/icons/heart.png"/>
+									Likes
+								</a>
+							</li>
+						</ul>
+					</li>
+
+					<li class="title">
+						PLAYLISTS
+						<ul class="sub-list">
+							<li class="name-w-icon">
+								<a href="#" class="anchor-block">
+									Trending now
+								</a>
+							</li>
+							<li class="name-w-icon">
+								<a href="#" class="anchor-block">
+									Top 50
+								</a>
+							</li>
+							<li class="name-w-icon">
+								<a href="#" class="anchor-block">
+									Friends' likes
+								</a>
+							</li>
+							<li class="name-w-icon add-item">
+								<a href="#" class="anchor-block add">
+									+ Add one
+								</a>
+							</li>
+						</ul>
+					</li>
+
+				</ul>
+
+			</div> <!-- end sidebar -->
+
+  	</div> <!-- end wrapper -->
 
   </body>
+
   <script type="text/javascript">
     const expressAppUrl = "http://localhost:3000"
   </script>
+
 </html>
